@@ -2,10 +2,20 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+defmodule ConfigHelper do
+  def adapter(:test) do
+    Hedwig.Adapters.Test
+  end
+  def adapter(_) do
+    Hedwig.Adapters.Console
+  end
+end
+
 config :a2ex, A2ex.Robot,
-  adapter: Hedwig.Adapters.Console,
+  adapter: ConfigHelper.adapter(Mix.env),
   name: "rebecca",
   aka: "/",
+  log_level: :debug,
   responders: [
     {Hedwig.Responders.Help, []},
     {Hedwig.Responders.Ping, []}
