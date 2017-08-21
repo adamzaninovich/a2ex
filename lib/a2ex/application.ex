@@ -8,8 +8,7 @@ defmodule A2ex.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Starts a worker by calling: A2ex.Worker.start_link(arg)
-      # {A2ex.Worker, arg},
+      {A2ex.Robot, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
