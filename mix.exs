@@ -14,7 +14,7 @@ defmodule A2ex.Mixfile do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:hedwig],
+      extra_applications: [:alice],
       mod: {A2ex.Application, []}
     ]
   end
@@ -22,7 +22,7 @@ defmodule A2ex.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:hedwig, "~> 1.0"}
+      {:alice, path: "~/projects/alice/a2"}
     ]
   end
 end
