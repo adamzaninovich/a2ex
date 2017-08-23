@@ -2,14 +2,13 @@ defmodule A2ex.Robot do
   use Alice.Bot, otp_app: :a2ex
 
   def handle_connect(%{name: name} = state) do
-    if :undefined == :global.whereis_name(name) do
-      :yes = :global.register_name(name, self())
+    with :undefined <- :global.whereis_name(name),
+         :yes <- :global.register_name(name, self()) do
+      {:ok, state}
+    else
+      _ -> raise "Unable to register bot"
     end
-
-    {:ok, state}
   end
 
-  def whereis(name) do
-    :global.whereis_name(name)
-  end
+  def pid, do: :global.whereis_name(get_config(:name))
 end
