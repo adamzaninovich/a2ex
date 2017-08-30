@@ -8,7 +8,7 @@ end
 config :a2ex, A2ex.Robot,
   adapter: Alice.Adapters.Slack,
   slack_token: ConfigHelper.get_slack_token(Mix.env),
-  name: "alice",
+  name: "a2",
   log_level: :debug,
   handlers: [A2ex.Random]
 
