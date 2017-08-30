@@ -23,7 +23,7 @@ defmodule A2ex.Mixfile do
   defp deps do
     [
       # {:alice, path: "~/projects/alice/a2"}
-      {:alice, github: "adamzaninovich/a2"}
+      {:alice, github: "adamzaninovich/a2", branch: "master"}
     ]
   end
 end
