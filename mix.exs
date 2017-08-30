@@ -22,7 +22,8 @@ defmodule A2ex.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:alice, path: "~/projects/alice/a2"}
+      # {:alice, path: "~/projects/alice/a2"}
+      {:alice, github: "adamzaninovich/a2"}
     ]
   end
 end
