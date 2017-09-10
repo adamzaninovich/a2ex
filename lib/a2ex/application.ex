@@ -6,14 +6,11 @@ defmodule A2ex.Application do
   use Application
 
   def start(_type, _args) do
-    # List all child processes to be supervised
     children = [
-      {A2ex.Robot, []}
+      {A2ex.State, []},
+      {A2ex.Bot, []}
     ]
 
-    # See https://hexdocs.pm/elixir/Supervisor.html
-    # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: A2ex.Supervisor]
-    Supervisor.start_link(children, opts)
+    Supervisor.start_link(children, strategy: :one_for_one, name: A2ex.Supervisor)
   end
 end

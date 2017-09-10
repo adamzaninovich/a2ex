@@ -1,4 +1,4 @@
-defmodule A2ex.Robot do
+defmodule A2ex.Bot do
   use Alice.Bot, otp_app: :a2ex
 
   def handle_connect(%{name: name} = state) do
