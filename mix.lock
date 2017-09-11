@@ -1,4 +1,4 @@
-%{"alice": {:git, "https://github.com/alice-bot/alice.git", "bc252023332fa7d131c2ca75bdcf96f6b7cc4185", [branch: "a2"]},
+%{"alice": {:git, "https://github.com/alice-bot/alice.git", "ac10ffb7c657d1d6c9fbac4a564d578a9aef3773", [branch: "a2"]},
   "alice_slack_adapter": {:git, "https://github.com/adamzaninovich/alice_slack_adapter.git", "80ce084dd2b9b264c6bc5075f30d1caf1f322ee9", []},
   "certifi": {:hex, :certifi, "2.0.0", "a0c0e475107135f76b8c1d5bc7efb33cd3815cb3cf3dea7aefdd174dabead064", [], [], "hexpm"},
   "hackney": {:hex, :hackney, "1.9.0", "51c506afc0a365868469dcfc79a9d0b94d896ec741cfd5bd338f49a5ec515bfe", [], [{:certifi, "2.0.0", [hex: :certifi, repo: "hexpm", optional: false]}, {:idna, "5.1.0", [hex: :idna, repo: "hexpm", optional: false]}, {:metrics, "1.0.1", [hex: :metrics, repo: "hexpm", optional: false]}, {:mimerl, "1.0.2", [hex: :mimerl, repo: "hexpm", optional: false]}, {:ssl_verify_fun, "1.1.1", [hex: :ssl_verify_fun, repo: "hexpm", optional: false]}], "hexpm"},
