@@ -38,7 +38,7 @@ defmodule A2ex.Random do
   command ~r/\beggplant me(?<num>\d+)\z/i,                 :multi_eggplant
   command ~r/\ba?re? (yo)?u high\??/i,                     :are_you_high
 
-  command ~r/\bdebug\b/i, :debug
+  route ~r/\brandom\.debug\b/i, :debug
 
   def debug(msg, _state) do
     """
