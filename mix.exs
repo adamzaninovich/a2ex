@@ -14,7 +14,6 @@ defmodule A2ex.Mixfile do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:alice],
       mod: {A2ex.Application, []}
     ]
   end
@@ -22,9 +21,9 @@ defmodule A2ex.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:alice, path: "~/projects/alice/a2"},
-      {:alice, github: "alice-bot/alice", branch: "a2"},
-      {:alice_slack_adapter, github: "adamzaninovich/alice_slack_adapter"}
+      {:alice, path: "~/projects/alice/alice"}
+      # {:alice, github: "alice-bot/alice", branch: "a2"},
+      # {:alice_slack_adapter, github: "adamzaninovich/alice_slack_adapter"}
     ]
   end
 end
