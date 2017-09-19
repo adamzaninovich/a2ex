@@ -198,8 +198,8 @@ defmodule A2ex.Random do
 
   @doc "`mad`/`angry`/`rage` - u mad bro?"
   def u_mad_bro(msg, _state) do
-    ~w[http://24.media.tumblr.com/e48acd4c34a62200a81df7259ab31d57/tumblr_n2kygg41US1rzgx44o1_400.gif
-      http://i1248.photobucket.com/albums/hh490/Andrea2awesome/internet-memes-y-u-mad-tho.jpg
+    ~w[https://i.imgur.com/zesJtxt.gif
+      https://i.imgur.com/T3xObA8.jpg
       http://i.imgur.com/KEh9WOT.png
       http://i.imgur.com/LupvkMH.jpg]
     |> random_reply(msg)
